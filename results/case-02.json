@@ -1,0 +1,142 @@
+{
+  "case_id": "case-02",
+  "booking_ref": "AER-7T3M1B",
+  "passenger_identity_confirmed": true,
+  "identity_method": "IDENTITY_CONFIRMED: booking_ref_exact+surname:AER-7T3M1B",
+  "safety_issues": [
+    "IDENTITY_CONFIRMED: booking_ref_exact+surname:AER-7T3M1B"
+  ],
+  "decision": "Rebook Chidi, Adaeze, and Emeka Okonkwo to Rome; refund Tobias Achebe; escalate Ngozi Okonkwo for special assistance rebooking.",
+  "reasoning": "The flight AK220 was cancelled due to a technical fault, which is within Aerlink's control. Compensation cannot be assessed until re-routing is settled (Section 5.2). Duty of care is triggered immediately on cancellation (Section 4.1). Chidi, Adaeze, and Emeka Okonkwo need to be rebooked to Rome. Tobias Achebe has requested a refund, which is permissible under Section 7.1. Ngozi Okonkwo requires special assistance, and her rebooking must ensure assistance is available, necessitating escalation to the Special Assistance team (Section 14.4).",
+  "actions_taken": [
+    {
+      "type": "rebook",
+      "result": {
+        "rebooking_id": "RBK-00003",
+        "confirmed_at": "2026-09-15T06:12:46Z",
+        "status": "CONFIRMED",
+        "booking_ref": "AER-7T3M1B",
+        "passenger_ids": [
+          "P1",
+          "P2",
+          "P3"
+        ],
+        "option_id": "OPT-A567D08FBA",
+        "flight_no": "AK436",
+        "date": "2026-08-05",
+        "cabin": "ECONOMY",
+        "fare_gbp": 108.67,
+        "notes": "Rebooking Chidi, Adaeze, and Emeka Okonkwo to Rome on the earliest available flight."
+      },
+      "action": {
+        "type": "rebook",
+        "passenger_ids": [
+          "P1",
+          "P2",
+          "P3"
+        ],
+        "option_id": "OPT-A567D08FBA",
+        "flight_no": "AK436",
+        "date": "2026-08-05",
+        "cabin": "ECONOMY",
+        "fare_gbp": 108.67,
+        "notes": "Rebooking Chidi, Adaeze, and Emeka Okonkwo to Rome on the earliest available flight."
+      }
+    },
+    {
+      "type": "refund",
+      "result": {
+        "refund_id": "RFD-00004",
+        "issued_at": "2026-09-15T06:12:46Z",
+        "status": "ISSUED",
+        "amount_gbp": 238.0,
+        "booking_ref": "AER-7T3M1B",
+        "passenger_ids": [
+          "P5"
+        ]
+      },
+      "action": {
+        "type": "refund",
+        "passenger_ids": [
+          "P5"
+        ],
+        "amount_gbp": 238.0,
+        "reason": "Refunding Tobias Achebe as requested since he is not traveling."
+      }
+    },
+    {
+      "type": "escalate",
+      "result": {
+        "escalation_id": "ESC-00005",
+        "raised_at": "2026-09-15T06:12:46Z",
+        "status": "OPEN",
+        "queue": "SPECIAL_ASSISTANCE",
+        "summary": "Ngozi Okonkwo requires rebooking with special assistance.",
+        "requested_decision": "Rebook with special assistance ensured.",
+        "booking_ref": "AER-7T3M1B",
+        "recommendation": "Ensure special assistance is rebooked for Ngozi Okonkwo before confirming any re-routing."
+      },
+      "action": {
+        "type": "escalate",
+        "summary": "Ngozi Okonkwo requires rebooking with special assistance.",
+        "requested_decision": "Rebook with special assistance ensured.",
+        "queue": "SPECIAL_ASSISTANCE",
+        "recommendation": "Ensure special assistance is rebooked for Ngozi Okonkwo before confirming any re-routing."
+      }
+    },
+    {
+      "type": "hotel_voucher",
+      "result": {
+        "voucher_id": "HTL-00006",
+        "issued_at": "2026-09-15T06:12:46Z",
+        "status": "ISSUED",
+        "station": "MAN",
+        "night": "2026-08-05",
+        "booking_ref": "AER-7T3M1B",
+        "passenger_ids": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "rate_gbp": 132.0,
+        "rooms_remaining_after": 17
+      },
+      "action": {
+        "type": "hotel_voucher",
+        "station": "MAN",
+        "night": "2026-08-05",
+        "passenger_ids": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "notes": "Providing hotel accommodation due to overnight stay requirement."
+      }
+    }
+  ],
+  "policy_sections_consulted": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "2.1",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "7.1",
+    "7.2",
+    "7.3",
+    "12",
+    "6.1",
+    "15.1",
+    "14",
+    "14.4"
+  ],
+  "uncertainties": [],
+  "human_followup": "Special Assistance team needs to ensure Ngozi Okonkwo's assistance is rebooked with her new flight."
+}

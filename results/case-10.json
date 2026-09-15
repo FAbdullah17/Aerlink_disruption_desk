@@ -1,0 +1,60 @@
+{
+  "case_id": "case-10",
+  "booking_ref": "AER-5C9X3T",
+  "passenger_identity_confirmed": true,
+  "identity_method": "IDENTITY_CONFIRMED: booking_ref_exact+surname:AER-5C9X3T",
+  "safety_issues": [
+    "IDENTITY_CONFIRMED: booking_ref_exact+surname:AER-5C9X3T"
+  ],
+  "decision": "Rebook Greg Whitmore on the earliest available flight to Geneva on 10 August 2026.",
+  "reasoning": "The flight AK229 on 5 August 2026 was cancelled due to crew unavailability, which is within Aerlink's control. Greg Whitmore has requested to be rebooked on the earliest flight to Geneva on 10 August 2026. The entitlements calculator indicates that compensation cannot be assessed until re-routing is settled. Duty of care is triggered immediately upon cancellation, but since the passenger has not requested any care services, no hotel or meal vouchers are issued. The earliest available flight on 10 August is AK275, departing at 05:05 and arriving at 06:32, which will be used for rebooking.",
+  "actions_taken": [
+    {
+      "type": "rebook",
+      "result": {
+        "rebooking_id": "RBK-00016",
+        "confirmed_at": "2026-09-15T06:13:29Z",
+        "status": "CONFIRMED",
+        "booking_ref": "AER-5C9X3T",
+        "passenger_ids": [
+          "P1"
+        ],
+        "option_id": "OPT-41D51DF204",
+        "flight_no": "AK275",
+        "date": "2026-08-10",
+        "cabin": "ECONOMY",
+        "fare_gbp": 276.43,
+        "notes": "Rebooking as per passenger's request for the earliest flight on 10 August."
+      },
+      "action": {
+        "type": "rebook",
+        "passenger_ids": [
+          "P1"
+        ],
+        "option_id": "OPT-41D51DF204",
+        "flight_no": "AK275",
+        "date": "2026-08-10",
+        "cabin": "ECONOMY",
+        "fare_gbp": 276.43,
+        "notes": "Rebooking as per passenger's request for the earliest flight on 10 August."
+      }
+    }
+  ],
+  "policy_sections_consulted": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "2.1",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "7.1",
+    "7.2",
+    "7.3",
+    "12"
+  ],
+  "uncertainties": [],
+  "human_followup": "None required. The rebooking action fulfills the passenger's request."
+}

@@ -1,0 +1,74 @@
+{
+  "case_id": "case-01",
+  "booking_ref": "AER-4K2P9X",
+  "passenger_identity_confirmed": true,
+  "identity_method": "IDENTITY_CONFIRMED: booking_ref_exact+surname:AER-4K2P9X",
+  "safety_issues": [
+    "IDENTITY_CONFIRMED: booking_ref_exact+surname:AER-4K2P9X"
+  ],
+  "decision": "Rebook Priya Raghunathan on the earliest available flight to Barcelona and reimburse meal expenses.",
+  "reasoning": "The flight AK412 was cancelled due to extraordinary weather circumstances, specifically a thunderstorm over the BCN terminal area, which is confirmed by the operational record and network advisories. As per Section 3.2, no compensation is payable for extraordinary circumstances. However, duty of care is triggered immediately upon cancellation (Section 4.1), entitling the passenger to meals and refreshments up to \u00a330 per 6-hour period (Section 4.2). Priya has requested to be rebooked on the next available flight to Barcelona, which aligns with her right to re-routing at the earliest opportunity (Section 6.1). The earliest available flight is AK529, departing at 05:50 and arriving at 07:55, with a fare of \u00a314.32. This option is within the same cabin class as originally booked (Section 6.2).",
+  "actions_taken": [
+    {
+      "type": "rebook",
+      "result": {
+        "rebooking_id": "RBK-00001",
+        "confirmed_at": "2026-09-15T06:12:34Z",
+        "status": "CONFIRMED",
+        "booking_ref": "AER-4K2P9X",
+        "passenger_ids": [
+          "P1"
+        ],
+        "option_id": "OPT-C147B271D2",
+        "flight_no": "AK529",
+        "date": "2026-08-04",
+        "cabin": "ECONOMY",
+        "fare_gbp": 14.32,
+        "notes": "Rebooking on the earliest available flight to BCN as requested."
+      },
+      "action": {
+        "type": "rebook",
+        "passenger_ids": [
+          "P1"
+        ],
+        "option_id": "OPT-C147B271D2",
+        "flight_no": "AK529",
+        "date": "2026-08-04",
+        "cabin": "ECONOMY",
+        "fare_gbp": 14.32,
+        "notes": "Rebooking on the earliest available flight to BCN as requested."
+      }
+    },
+    {
+      "type": "goodwill",
+      "result": {
+        "payment_id": "GWP-00002",
+        "type": "GOODWILL",
+        "paid_at": "2026-09-15T06:12:34Z",
+        "status": "PAID",
+        "amount_gbp": 30.0,
+        "booking_ref": "AER-4K2P9X",
+        "reason": "Reimbursement for meals and refreshments due to flight cancellation."
+      },
+      "action": {
+        "type": "goodwill",
+        "amount_gbp": 30.0,
+        "reason": "Reimbursement for meals and refreshments due to flight cancellation."
+      }
+    }
+  ],
+  "policy_sections_consulted": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "2.1",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "3.2"
+  ],
+  "uncertainties": [],
+  "human_followup": "Ensure reimbursement for meals is processed upon receipt of receipts from Priya Raghunathan."
+}

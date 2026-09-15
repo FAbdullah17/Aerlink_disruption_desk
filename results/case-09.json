@@ -1,0 +1,85 @@
+{
+  "case_id": "case-09",
+  "booking_ref": "AER-8N4V6J",
+  "passenger_identity_confirmed": true,
+  "identity_method": "IDENTITY_CONFIRMED: booking_ref_exact+surname:AER-8N4V6J",
+  "safety_issues": [
+    "IDENTITY_CONFIRMED: booking_ref_exact+surname:AER-8N4V6J"
+  ],
+  "decision": "Rebook Aisha Bello on the earliest available flight to Dubai and provide a hotel voucher for the night.",
+  "reasoning": "The flight AK512 was cancelled due to a technical fault, which is within Aerlink's control (Section 3.3). Duty of care is triggered immediately upon cancellation (Section 4.1), and Aisha is entitled to hotel accommodation (Section 4.2). The earliest available flight to Dubai is AK879 departing at 05:00, which should be booked for Aisha (Section 6.1). Compensation cannot be assessed until re-routing is completed (Section 5.2).",
+  "actions_taken": [
+    {
+      "type": "rebook",
+      "result": {
+        "rebooking_id": "RBK-00014",
+        "confirmed_at": "2026-09-15T06:13:20Z",
+        "status": "CONFIRMED",
+        "booking_ref": "AER-8N4V6J",
+        "passenger_ids": [
+          "P1"
+        ],
+        "option_id": "OPT-3EE7B72784",
+        "flight_no": "AK879",
+        "date": "2026-08-07",
+        "cabin": "ECONOMY",
+        "fare_gbp": 302.31,
+        "notes": "Rebooked on earliest available flight to Dubai."
+      },
+      "action": {
+        "type": "rebook",
+        "passenger_ids": [
+          "P1"
+        ],
+        "option_id": "OPT-3EE7B72784",
+        "flight_no": "AK879",
+        "date": "2026-08-07",
+        "cabin": "ECONOMY",
+        "fare_gbp": 302.31,
+        "notes": "Rebooked on earliest available flight to Dubai."
+      }
+    },
+    {
+      "type": "hotel_voucher",
+      "result": {
+        "voucher_id": "HTL-00015",
+        "issued_at": "2026-09-15T06:13:20Z",
+        "status": "ISSUED",
+        "station": "LGW",
+        "night": "2026-08-06",
+        "booking_ref": "AER-8N4V6J",
+        "passenger_ids": [
+          "P1"
+        ],
+        "rate_gbp": 165.0,
+        "rooms_remaining_after": 0
+      },
+      "action": {
+        "type": "hotel_voucher",
+        "station": "LGW",
+        "night": "2026-08-06",
+        "passenger_ids": [
+          "P1"
+        ],
+        "notes": "Hotel accommodation provided due to overnight stay requirement."
+      }
+    }
+  ],
+  "policy_sections_consulted": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "2.1",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "4.2",
+    "4.5"
+  ],
+  "uncertainties": [
+    "Compensation amount cannot be determined until re-routing is completed."
+  ],
+  "human_followup": "Monitor for any further accommodation needs if re-routing is delayed."
+}

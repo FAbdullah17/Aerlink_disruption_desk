@@ -1,0 +1,27 @@
+{
+  "case_id": "case-03",
+  "booking_ref": null,
+  "passenger_identity_confirmed": false,
+  "identity_method": "",
+  "safety_issues": [
+    "IDENTITY_NOT_CONFIRMED: no_matches"
+  ],
+  "decision": "ESCALATE: Identity not confirmed",
+  "reasoning": "Passenger identity could not be confirmed per Section 2. IDENTITY_NOT_CONFIRMED: no_matches",
+  "actions_taken": [
+    {
+      "type": "escalate",
+      "result": {
+        "escalation_id": "ESC-00007",
+        "raised_at": "2026-09-15T06:12:46Z",
+        "status": "OPEN",
+        "queue": "GENERAL",
+        "summary": "Identity could not be confirmed per S2.2",
+        "requested_decision": "Confirm passenger identity before proceeding"
+      }
+    }
+  ],
+  "policy_sections_consulted": [],
+  "uncertainties": [],
+  "human_followup": "Human must confirm identity before any action."
+}

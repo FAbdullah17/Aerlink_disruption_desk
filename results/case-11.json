@@ -1,0 +1,80 @@
+{
+  "case_id": "case-11",
+  "booking_ref": "AER-7P4R2M",
+  "passenger_identity_confirmed": true,
+  "identity_method": "IDENTITY_CONFIRMED: booking_ref_exact+surname:AER-7P4R2M",
+  "safety_issues": [
+    "IDENTITY_CONFIRMED: booking_ref_exact+surname:AER-7P4R2M"
+  ],
+  "decision": "Rebook Mr. Braithwaite on the earliest available flight to Rome and provide a hotel voucher for the night.",
+  "reasoning": "The flight AK150 was cancelled due to a technical fault, which is within Aerlink's control (Section 3.3). Mr. Braithwaite is entitled to re-routing at the earliest opportunity (Section 6.1) and duty of care, including hotel accommodation, as the cancellation occurred late at night and he cannot return home (Section 4.2). The earliest available flight is AK668 departing at 05:00. The hotel allocation at LGW is exhausted, so this case needs to be escalated to Accommodation Services to arrange a hotel or authorize reimbursement (Section 4.5). Compensation cannot be assessed until re-routing is completed (Section 5.2).",
+  "actions_taken": [
+    {
+      "type": "rebook",
+      "result": {
+        "rebooking_id": "RBK-00017",
+        "confirmed_at": "2026-09-15T06:13:39Z",
+        "status": "CONFIRMED",
+        "booking_ref": "AER-7P4R2M",
+        "passenger_ids": [
+          "P1"
+        ],
+        "option_id": "OPT-FF398CE2C6",
+        "flight_no": "AK668",
+        "date": "2026-08-07",
+        "cabin": "ECONOMY",
+        "fare_gbp": 119.76,
+        "notes": "Rebooking on the earliest available flight to Rome."
+      },
+      "action": {
+        "type": "rebook",
+        "passenger_ids": [
+          "P1"
+        ],
+        "option_id": "OPT-FF398CE2C6",
+        "flight_no": "AK668",
+        "date": "2026-08-07",
+        "cabin": "ECONOMY",
+        "fare_gbp": 119.76,
+        "notes": "Rebooking on the earliest available flight to Rome."
+      }
+    },
+    {
+      "type": "escalate",
+      "result": {
+        "escalation_id": "ESC-00018",
+        "raised_at": "2026-09-15T06:13:39Z",
+        "status": "OPEN",
+        "queue": "OPS_LIAISON",
+        "summary": "Hotel allocation at LGW exhausted for 2026-08-06. Mr. Braithwaite requires accommodation.",
+        "requested_decision": "Arrange hotel accommodation or authorize reimbursement.",
+        "booking_ref": "AER-7P4R2M",
+        "recommendation": "Due to exhausted hotel allocation, escalate to arrange accommodation for Mr. Braithwaite."
+      },
+      "action": {
+        "type": "escalate",
+        "summary": "Hotel allocation at LGW exhausted for 2026-08-06. Mr. Braithwaite requires accommodation.",
+        "requested_decision": "Arrange hotel accommodation or authorize reimbursement.",
+        "queue": "OPS_LIAISON",
+        "recommendation": "Due to exhausted hotel allocation, escalate to arrange accommodation for Mr. Braithwaite."
+      }
+    }
+  ],
+  "policy_sections_consulted": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "2.1",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "4.2",
+    "4.5"
+  ],
+  "uncertainties": [
+    "Compensation amount cannot be determined until re-routing is completed."
+  ],
+  "human_followup": "Accommodation Services needs to arrange a hotel for Mr. Braithwaite or authorize reimbursement due to exhausted allocation."
+}
